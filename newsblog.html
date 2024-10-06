@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Blog</title>
+    <style>
+    /*General Style */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+background-color: #616e94;
+}
+header {
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 1.5rem 0;
+}
+h1  {
+margin: 0;
+}
+main {
+    margin: 40px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto=fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.news-card {
+    background-color: #b8c4c7;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgpa(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+.news-card:hover {
+    transform:  scale(1.05);
+    background-color: #a5a58f;
+}
+.news-card h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+.news-card p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 15px;
+}
+.news-card a {
+    text-decoration: none;
+    color: #065e99;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.news-card a:hover {
+    color: #39b421;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Daily News Blog</h1>
+    </header>
+    <main>
+        <div class="grid-container">
+            <!--Section 1-->
+            <section class="news-card">
+                <h2>World News</h2>
+                <p>Stay updated with the latest events around the globe.</p>
+                <a href="https://www.bbc.com/news/world" target="_blank">Read more</a>
+            </section>
+            <!--Section 2-->
+            <section class="news-card">
+                <h2>Technology</h2>
+                <p>Latest updates from the tech world including AI,gadgets,and more.</p>
+                <a href="http://www.techcrunch.com/" target="_blank">Read more</a>
+            </section>
+            <!--Section 3-->
+            <section class="news-card">
+                <h2>Health</h2>
+                <p>Read about the most recent medical breakthroughsand health tips.</p>
+                <a href="http://www.who.int/news-room" target="_blank">Read more</a>
+            </section>
+             <!--Section 4-->
+             <section class="news-card">
+             <h2>Sports</h2>
+             <p>Catch up on the latest scores and sports news from across the world.</p>
+             <a href="http://www.espn.com/" target="_blank">Read more</a>
+         </section>
+          <!--Section 5-->
+          <section class="news-card">
+          <h2>Business</h2>
+          <p>Read about the latest in finance,stock market updates,and more.</p>
+          <a href="http://www.bloomberg.com/" target="_blank">Read more</a>
+      </section>
+       <!--Section 6-->
+       <section class="news-card">
+       <h2>Entertainment</h2>
+       <p>Get the latest news from Hollywood and beyond,covering movies and music.</p>
+       <a href="http://www.variety.com/" target="_blank">Read more</a>
+   </section>
+        </div>
+    </main>
+</body>
+</html>
